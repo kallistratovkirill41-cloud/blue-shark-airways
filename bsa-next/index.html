@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blue Shark Airways</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <meta name="theme-color" content="#040D1A">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <img src="images/logo.png" alt="Blue Shark Airways" class="logo-img">
+        <span class="logo-text">BLUE SHARK<br><small>AIRWAYS</small></span>
+      </a>
+      <nav class="nav">
+        <a href="#about">О нас</a>
+        <a href="#hubs">Хабы</a>
+        <a href="#fleet">Флот</a>
+        <a href="cargo/">Cargo</a>
+        <a href="portal/">Личный кабинет</a>
+        <a href="#join">Вступить</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1>Blue Shark Airways</h1>
+      <p class="hero-subtitle">Виртуальная авиакомпания без лишней бюрократии.<br>Летай свободно. Летай красиво.</p>
+      <a href="#join" class="btn">Присоединиться</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">О компании</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Blue Shark Airways — это виртуальная авиакомпания для тех, кто хочет просто летать, а не проходить многоуровневые экзамены и закрывать нормы часов.</p>
+          <p>Мы ценим атмосферу, красивые ливреи и нормальное общение. Никаких жёстких ограничений по типам воздушных судов и обязательных часов налёта.</p>
+          <p>Летай столько, сколько хочешь, и на чём хочешь.</p>
+        </div>
+        <div class="about-features">
+          <div class="feature">
+            <span class="feature-icon">✈</span>
+            <h3>Свобода</h3>
+            <p>Никаких обязательных норм часов и жёстких допусков</p>
+          </div>
+          <div class="feature">
+            <span class="feature-icon">🎨</span>
+            <h3>Стиль</h3>
+            <p>Собственный узнаваемый дизайн ливрей</p>
+          </div>
+          <div class="feature">
+            <span class="feature-icon">🤝</span>
+            <h3>Атмосфера</h3>
+            <p>Без душноты и лишней корпоративности</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hubs -->
+  <section id="hubs" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Хабы</h2>
+      <div class="hubs-grid">
+        <div class="hub-card">
+          <div class="hub-code">UUEE</div>
+          <h3>Шереметьево</h3>
+          <p>Москва</p>
+        </div>
+        <div class="hub-card">
+          <div class="hub-code">ULLI</div>
+          <h3>Пулково</h3>
+          <p>Санкт-Петербург</p>
+        </div>
+        <div class="hub-card">
+          <div class="hub-code">UNNT</div>
+          <h3>Толмачёво</h3>
+          <p>Новосибирск</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fleet -->
+  <section id="fleet" class="section">
+    <div class="container">
+      <h2 class="section-title">Наш флот</h2>
+      <p class="section-desc">Расширяем линейку в едином стиле Blue Shark. Нажми на картинку, чтобы открыть её целиком</p>
+      
+            <div class="fleet-filter" id="fleet-filter">
+        <button class="filter-btn active" data-filter="all">Все</button>
+        <button class="filter-btn" data-filter="airbus">Airbus</button>
+        <button class="filter-btn" data-filter="boeing">Boeing</button>
+        <button class="filter-btn" data-filter="cargo">Cargo</button>
+      </div>
+
+      <div class="fleet-grid">
+        <figure class="fleet-card" data-groups="airbus" data-full="images/a319.webp" data-title="Airbus A319 · Базовая ливрея · CFM56-5B5/P · RA-73319">
+          <div class="fleet-img-wrap">
+            <img src="images/a319.webp" alt="Airbus A319 Blue Shark Airways" loading="lazy" class="fleet-img">
+            <span class="fleet-tag">Пассажирский</span>
+          </div>
+          <figcaption>
+            <h3>Airbus A319</h3>
+            <p>Базовая ливрея · CFM56-5B5/P · RA-73319</p>
+          </figcaption>
+        </figure>
+        <figure class="fleet-card" data-groups="airbus" data-full="images/a319-special.webp" data-title="Airbus A319 · Спец-ливрея · CFM56-5B5/P · RA-73319">
+          <div class="fleet-img-wrap">
+            <img src="images/a319-special.webp" alt="Airbus A319 Blue Shark Airways" loading="lazy" class="fleet-img">
+            <span class="fleet-tag">Пассажирский</span>
+          </div>
+          <figcaption>
+            <h3>Airbus A319</h3>
+            <p>Спец-ливрея · CFM56-5B5/P · RA-73319</p>
+          </figcaption>
+        </figure>
+        <figure class="fleet-card" data-groups="airbus" data-full="images/a320-cfm.webp" data-title="Airbus A320 · Спец-ливрея · CFM56-5B4/P · RA-73320">
+          <div class="fleet-img-wrap">
+            <img src="images/a320-cfm.webp" alt="Airbus A320 Blue Shark Airways" loading="lazy" class="fleet-img">
+            <span class="fleet-tag">Пассажирский</span>
+          </div>
+          <figcaption>
+            <h3>Airbus A320</h3>
+            <p>Спец-ливрея · CFM56-5B4/P · RA-73320</p>
+          </figcaption>
+        </figure>
+        <figure class="fleet-card" data-groups="airbus" data-full="images/a320-iae.webp" data-title="Airbus A320 · Спец-ливрея · IAE V2500-A5 · RA-73321">
+          <div class="fleet-img-wrap">
+            <img src="images/a320-iae.webp" alt="Airbus A320 Blue Shark Airways" loading="lazy" class="fleet-img">
+            <span class="fleet-tag">Пассажирский</span>
+          </div>
+          <figcaption>
+            <h3>Airbus A320</h3>
+            <p>Спец-ливрея · IAE V2500-A5 · RA-73321</p>
+          </figcaption>
+        </figure>
+        <figure class="fleet-card" data-groups="airbus" data-full="images/a321.webp" data-title="Airbus A321 · Спец-ливрея · CFM56 · RA-73322">
+          <div class="fleet-img-wrap">
+            <img src="images/a321.webp" alt="Airbus A321 Blue Shark Airways" loading="lazy" class="fleet-img">
+            <span class="fleet-tag">Пассажирский</span>
+          </div>
+          <figcaption>
+            <h3>Airbus A321</h3>
+            <p>Спец-ливрея · CFM56 · RA-73322</p>
+          </figcaption>
+        </figure>
+        <figure class="fleet-card" data-groups="airbus" data-full="images/a330-900neo.webp" data-title="Airbus A330-900neo · Спец-ливрея · Rolls-Royce Trent 7000 · RA-73330">
+          <div class="fleet-img-wrap">
+            <img src="images/a330-900neo.webp" alt="Airbus A330-900neo Blue Shark Airways" loading="lazy" class="fleet-img">
+            <span class="fleet-tag">Пассажирский</span>
+          </div>
+          <figcaption>
+            <h3>Airbus A330-900neo</h3>
+            <p>Спец-ливрея · Rolls-Royce Trent 7000 · RA-73330</p>
+          </figcaption>
+        </figure>
+        <figure class="fleet-card" data-groups="airbus" data-full="images/a350.webp" data-title="Airbus A350-900 · Rolls-Royce Trent XWB-84 · RA-73350">
+          <div class="fleet-img-wrap">
+            <img src="images/a350.webp" alt="Airbus A350-900 Blue Shark Airways" loading="lazy" class="fleet-img">
+            <span class="fleet-tag">Пассажирский</span>
+          </div>
+          <figcaption>
+            <h3>Airbus A350-900</h3>
+            <p>Rolls-Royce Trent XWB-84 · RA-73350</p>
+          </figcaption>
+        </figure>
+        <figure class="fleet-card" data-groups="airbus" data-full="images/a380.webp" data-title="Airbus A380-800 · 4× Engine Alliance GP7270 · RA-73380">
+          <div class="fleet-img-wrap">
+            <img src="images/a380.webp" alt="Airbus A380-800 Blue Shark Airways" loading="lazy" class="fleet-img">
+            <span class="fleet-tag">Пассажирский</span>
+          </div>
+          <figcaption>
+            <h3>Airbus A380-800</h3>
+            <p>4× Engine Alliance GP7270 · RA-73380</p>
+          </figcaption>
+        </figure>
+        <figure class="fleet-card" data-groups="boeing" data-full="images/b737-600.webp" data-title="Boeing 737-600 · Спец-ливрея · CFM56-7B22 · RA-73600">
+          <div class="fleet-img-wrap">
+            <img src="images/b737-600.webp" alt="Boeing 737-600 Blue Shark Airways" loading="lazy" class="fleet-img">
+            <span class="fleet-tag">Пассажирский</span>
+          </div>
+          <figcaption>
+            <h3>Boeing 737-600</h3>
+            <p>Спец-ливрея · CFM56-7B22 · RA-73600</p>
+          </figcaption>
+        </figure>
+        <figure class="fleet-card" data-groups="boeing" data-full="images/b737-700.webp" data-title="Boeing 737-700 · Спец-ливрея · CFM56-7B24 · RA-73700">
+          <div class="fleet-img-wrap">
+            <img src="images/b737-700.webp" alt="Boeing 737-700 Blue Shark Airways" loading="lazy" class="fleet-img">
+            <span class="fleet-tag">Пассажирский</span>
+          </div>
+          <figcaption>
+            <h3>Boeing 737-700</h3>
+            <p>Спец-ливрея · CFM56-7B24 · RA-73700</p>
+          </figcaption>
+        </figure>
+        <figure class="fleet-card" data-groups="boeing" data-full="images/b737-800.webp" data-title="Boeing 737-800 · Спец-ливрея · CFM56-7B26 · RA-73800">
+          <div class="fleet-img-wrap">
+            <img src="images/b737-800.webp" alt="Boeing 737-800 Blue Shark Airways" loading="lazy" class="fleet-img">
+            <span class="fleet-tag">Пассажирский</span>
+          </div>
+          <figcaption>
+            <h3>Boeing 737-800</h3>
+            <p>Спец-ливрея · CFM56-7B26 · RA-73800</p>
+          </figcaption>
+        </figure>
+        <figure class="fleet-card" data-groups="boeing" data-full="images/b787-8.webp" data-title="Boeing 787-8 · Спец-ливрея · GEnx-1B64 · RA-73788">
+          <div class="fleet-img-wrap">
+            <img src="images/b787-8.webp" alt="Boeing 787-8 Blue Shark Airways" loading="lazy" class="fleet-img">
+            <span class="fleet-tag">Пассажирский</span>
+          </div>
+          <figcaption>
+            <h3>Boeing 787-8</h3>
+            <p>Спец-ливрея · GEnx-1B64 · RA-73788</p>
+          </figcaption>
+        </figure>
+        <figure class="fleet-card" data-groups="boeing" data-full="images/b787-9.webp" data-title="Boeing 787-9 · Спец-ливрея · GEnx-1B74 · RA-73789">
+          <div class="fleet-img-wrap">
+            <img src="images/b787-9.webp" alt="Boeing 787-9 Blue Shark Airways" loading="lazy" class="fleet-img">
+            <span class="fleet-tag">Пассажирский</span>
+          </div>
+          <figcaption>
+            <h3>Boeing 787-9</h3>
+            <p>Спец-ливрея · GEnx-1B74 · RA-73789</p>
+          </figcaption>
+        </figure>
+        <figure class="fleet-card" data-groups="boeing" data-full="images/b787-10.webp" data-title="Boeing 787-10 · Спец-ливрея · GEnx-1B76 · RA-73780">
+          <div class="fleet-img-wrap">
+            <img src="images/b787-10.webp" alt="Boeing 787-10 Blue Shark Airways" loading="lazy" class="fleet-img">
+            <span class="fleet-tag">Пассажирский</span>
+          </div>
+          <figcaption>
+            <h3>Boeing 787-10</h3>
+            <p>Спец-ливрея · GEnx-1B76 · RA-73780</p>
+          </figcaption>
+        </figure>
+        <figure class="fleet-card" data-groups="boeing" data-full="images/b777-300er.webp" data-title="Boeing 777-300ER · GE90-115B · RA-73773">
+          <div class="fleet-img-wrap">
+            <img src="images/b777-300er.webp" alt="Boeing 777-300ER Blue Shark Airways" loading="lazy" class="fleet-img">
+            <span class="fleet-tag">Пассажирский</span>
+          </div>
+          <figcaption>
+            <h3>Boeing 777-300ER</h3>
+            <p>GE90-115B · RA-73773</p>
+          </figcaption>
+        </figure>
+        <figure class="fleet-card" data-groups="boeing" data-full="images/b747-8i.webp" data-title="Boeing 747-8I · Спец-ливрея · 4× GEnx-2B67 · RA-73748">
+          <div class="fleet-img-wrap">
+            <img src="images/b747-8i.webp" alt="Boeing 747-8I Blue Shark Airways" loading="lazy" class="fleet-img">
+            <span class="fleet-tag">Пассажирский</span>
+          </div>
+          <figcaption>
+            <h3>Boeing 747-8I</h3>
+            <p>Спец-ливрея · 4× GEnx-2B67 · RA-73748</p>
+          </figcaption>
+        </figure>
+        <figure class="fleet-card" data-groups="boeing" data-full="images/md11.webp" data-title="McDonnell Douglas MD-11 · Heritage · 3× GE CF6-80C2 · RA-73011">
+          <div class="fleet-img-wrap">
+            <img src="images/md11.webp" alt="McDonnell Douglas MD-11 Blue Shark Airways" loading="lazy" class="fleet-img">
+            <span class="fleet-tag">Пассажирский</span>
+          </div>
+          <figcaption>
+            <h3>McDonnell Douglas MD-11</h3>
+            <p>Heritage · 3× GE CF6-80C2 · RA-73011</p>
+          </figcaption>
+        </figure>
+        <figure class="fleet-card" data-groups="boeing cargo" data-full="images/b777f.webp" data-title="Boeing 777F · Blue Shark Cargo · GE90-110B · RA-77042">
+          <div class="fleet-img-wrap">
+            <img src="images/b777f.webp" alt="Boeing 777F Blue Shark Airways" loading="lazy" class="fleet-img">
+            <span class="fleet-tag fleet-tag-cargo">Cargo</span>
+          </div>
+          <figcaption>
+            <h3>Boeing 777F</h3>
+            <p>Blue Shark Cargo · GE90-110B · RA-77042</p>
+          </figcaption>
+        </figure>
+        <figure class="fleet-card" data-groups="boeing cargo" data-full="images/md11f.webp" data-title="McDonnell Douglas MD-11F · Blue Shark Cargo · 3× GE CF6-80C2 · RA-73042">
+          <div class="fleet-img-wrap">
+            <img src="images/md11f.webp" alt="McDonnell Douglas MD-11F Blue Shark Airways" loading="lazy" class="fleet-img">
+            <span class="fleet-tag fleet-tag-cargo">Cargo</span>
+          </div>
+          <figcaption>
+            <h3>McDonnell Douglas MD-11F</h3>
+            <p>Blue Shark Cargo · 3× GE CF6-80C2 · RA-73042</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cargo teaser -->
+  <section class="section section-dark">
+    <div class="container cargo-teaser">
+      <h2 class="section-title">Blue Shark Cargo</h2>
+      <p class="section-desc">Грузовое подразделение: Boeing 777F и MD-11F</p>
+      <a href="cargo/" class="btn">Открыть сайт Cargo</a>
+    </div>
+  </section>
+
+  <!-- Join -->
+  <section id="join" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Как присоединиться</h2>
+      <div class="join-content">
+        <p>Всё просто и без лишних формальностей.</p>
+        <ul class="join-list">
+          <li>Зайди в наш Discord</li>
+          <li>Напиши о желании присоединиться</li>
+          <li>Получи позывной и летай</li>
+        </ul>
+        <p class="join-note">Никаких экзаменов, обязательных часов и жёстких ограничений по типам ВС.</p>
+        <a href="https://discord.gg/DXB93Hhp6" class="btn btn-large" id="discord-btn" target="_blank" rel="noopener noreferrer">Discord сервер</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="Blue Shark" class="footer-logo-img">
+          <span>Blue Shark Airways</span>
+        </div>
+        <p><a href="cargo/" style="color:var(--cyan);text-decoration:none">Blue Shark Cargo</a> · Виртуальная авиакомпания · 2026</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Закрыть">&times;</button>
+    <img src="" alt="" id="lightbox-img">
+    <p id="lightbox-caption"></p>
+  </div>
+
+  <script>
+    (function () {
+      var lb = document.getElementById('lightbox');
+      var img = document.getElementById('lightbox-img');
+      var cap = document.getElementById('lightbox-caption');
+      function close() { lb.classList.remove('open'); lb.setAttribute('aria-hidden', 'true'); }
+      document.querySelectorAll('.fleet-card').forEach(function (c) {
+        c.addEventListener('click', function () {
+          img.src = c.dataset.full; cap.textContent = c.dataset.title;
+          lb.classList.add('open'); lb.setAttribute('aria-hidden', 'false');
+        });
+      });
+      var btns = document.querySelectorAll('.filter-btn');
+      var cards = document.querySelectorAll('.fleet-card');
+      btns.forEach(function (b) {
+        b.addEventListener('click', function () {
+          btns.forEach(function (x) { x.classList.remove('active'); });
+          b.classList.add('active');
+          var f = b.dataset.filter;
+          cards.forEach(function (c) {
+            var g = (c.dataset.groups || '').split(' ');
+            c.style.display = (f === 'all' || g.indexOf(f) !== -1) ? '' : 'none';
+          });
+        });
+      });
+      lb.addEventListener('click', close);
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+    })();
+  </script>
+
+</body>
+</html>
